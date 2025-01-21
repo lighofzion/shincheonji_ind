@@ -12,6 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Defer non-critical JS -->
     <script src="/scripts/main.js" defer></script>
@@ -20,7 +22,7 @@
 <body>
     <header class="header">
         <nav class="nav-left">
-            <a href="#" class="nav-item">Introduction</a>
+            <a href="/pages/about.html" class="nav-item">Introduction</a>
             <a href="#" class="nav-item">Organization</a>
             <a href="#" class="nav-item">Revealed Word</a>
         </nav>
@@ -148,9 +150,6 @@
         </div>
     </section>
 
-    <main>
-        <!-- Main content -->
-    </main>
 
     <footer class="footer">
         <div class="footer-links">
@@ -160,10 +159,17 @@
         </div>
         
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fab">f</i></a>
-            <a href="#" class="social-link"><i class="fab">yt</i></a>
-            <a href="#" class="social-link"><i class="fab">ig</i></a>
-            <a href="#" class="social-link"><i class="fab">pi</i></a>
+            <a href="https://youtube.com/yourchannel">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            
+            <a href="https://instagram.com/yourprofile">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="https://facebook.com/yourpage">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
         </div>
 
         <div class="newsletter">
@@ -181,46 +187,6 @@
 
 
     <script>
-        // Header scroll effect
-        const header = document.querySelector('.header');
-        const heroContent = document.querySelector('.hero-content');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Animation using Motion One
-        motion.animate(
-            heroContent,
-            {
-                opacity: [0, 1],
-                y: [50, 0]
-            },
-            {
-                duration: 1,
-                easing: [.22, .03, .26, 1]
-            }
-        );
-
-        // Animate header items
-        const navItems = document.querySelectorAll('.nav-item');
-        motion.stagger(
-            navItems,
-            {
-                opacity: [0, 1],
-                y: [-20, 0]
-            },
-            {
-                duration: 0.5,
-                delay: 0.2,
-                stagger: 0.1
-            }
-        );
-
          // Parallax effect for ebook signup background
          window.addEventListener('scroll', () => {
             const parallaxBg = document.querySelector('.parallax-bg');
