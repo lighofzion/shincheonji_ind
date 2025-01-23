@@ -135,24 +135,6 @@
     <div id="footer-placeholder"></div>
 
     <script type="module">
-        import partials from '/scripts/partials.js';
-        
-        // Load header and footer
-        document.addEventListener('DOMContentLoaded', async () => {
-            await partials.insert('header-placeholder', '/partials/header.html');
-            await partials.insert('footer-placeholder', '/partials/footer.html');
-        });
-
-        // Parallax effect for ebook signup background
-        window.addEventListener('scroll', () => {
-            const parallaxBg = document.querySelector('.parallax-bg');
-            if (parallaxBg) {
-                const scrolled = window.pageYOffset;
-                const rate = scrolled * 0.5;
-                parallaxBg.style.transform = `translate3d(0, ${rate}px, 0)`;
-            }
-        });
-
         // Video player function
         function playVideo() {
             const videoWrapper = document.querySelector('.video-wrapper');
@@ -175,6 +157,7 @@
             videoWrapper.appendChild(iframe);
         }
     </script>
+    <script type="module" src="/scripts/init-partials.js"></script>
     <script type="module" src="/scripts/router.js" defer></script>
 
 </body>
