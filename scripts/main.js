@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const header = document.querySelector('.header');
     const heroContent = document.querySelector('.hero-content');
 
-    console.log('header', header);
-    console.log('heroContent', heroContent);
     if (header) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
