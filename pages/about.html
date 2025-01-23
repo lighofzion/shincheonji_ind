@@ -16,63 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Defer non-critical JS -->
-    <script src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion/10.16.2/motion.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-left">
-            <a href="#" class="nav-item">Introduction</a>
-            <a href="#" class="nav-item">Organization</a>
-            <a href="#" class="nav-item">Revealed Word</a>
-        </nav>
-        
-        <a href="#" class="logo">Shincheonji</a>
-        
-        <nav class="nav-right">
-            <a href="#" class="nav-item">Mission Center</a>
-            <a href="#" class="nav-item">Church News</a>
-            <a href="#" class="nav-item">Contact</a>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Main content -->
-    <main></main>
+    <main id="main-content">
+        <!-- Page content will be loaded here -->
+    </main>
 
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">CONTACT ></a>
-            <a href="#" class="footer-link">ABOUT ></a>
-            <a href="#" class="footer-link">REVEALED WORD ></a>
-        </div>
-        
-        <div class="social-links">
-            <a href="https://youtube.com/yourchannel">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            
-            <a href="https://instagram.com/yourprofile">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a href="https://facebook.com/yourpage">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-        </div>
-
-        
-
-        <div class="newsletter">
-            <h3 class="newsletter-title">SIGN UP FOR OUR<br>NEWSLETTER</h3>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email here *" required class="newsletter-input">
-                <button type="submit" class="newsletter-button">SUBSCRIBE</button>
-            </form>
-        </div>
-
-        <div class="copyright">
-            © 2025 Shincheonji India.
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script type="module" src="/scripts/init-partials.js"></script>
 </body>
 </html>

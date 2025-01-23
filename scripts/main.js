@@ -1,17 +1,19 @@
+import { animate, stagger } from 'https://cdn.skypack.dev/motion';
+
 // Header scroll effect
 const header = document.querySelector('.header');
 const heroContent = document.querySelector('.hero-content');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 50) {
+//         header.classList.add('scrolled');
+//     } else {
+//         header.classList.remove('scrolled');
+//     }
+// });
 
 // Animation using Motion One
-motion.animate(
+animate(
     heroContent,
     {
         opacity: [0, 1],
@@ -25,7 +27,7 @@ motion.animate(
 
 // Animate header items
 const navItems = document.querySelectorAll('.nav-item');
-motion.stagger(
+stagger(
     navItems,
     {
         opacity: [0, 1],
