@@ -47,6 +47,11 @@ class Partials {
         });
     }
 
+    async insertHead(partialUrl) {
+        const content = await this.load(partialUrl);
+        document.head.insertAdjacentHTML('afterbegin', content);
+    }
+
     // Clear the cache
     clearCache() {
         this.cache.clear();
