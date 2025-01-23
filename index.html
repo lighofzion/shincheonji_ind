@@ -16,179 +16,135 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Defer non-critical JS -->
-    <script src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion/10.16.2/motion.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-left">
-            <a href="/pages/about.html" class="nav-item">Introduction</a>
-            <a href="#" class="nav-item">Organization</a>
-            <a href="#" class="nav-item">Revealed Word</a>
-        </nav>
-        
-        <a href="#" class="logo">Shincheonji</a>
-        
-        <nav class="nav-right">
-            <a href="#" class="nav-item">Mission Center</a>
-            <a href="#" class="nav-item">Church News</a>
-            <a href="#" class="nav-item">Contact</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <video class="video-background" autoplay muted loop playsinline>
-            <source src="/assets/videos/hero-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <div class="hero-subtitle">Shincheonji Bible Seminar</div>
-            <h1 class="hero-title">Testimony of the Fulfilled Realities of Revelation</h1>
-            <a href="#" class="hero-button">Learn More</a>
-        </div>
-    </section>
+    <div id="header-placeholder"></div>
 
-    <section class="services">
-        <h2 class="section-title">Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="/api/placeholder/600/400" alt="Service 1">
-                    <div class="service-overlay">
-                        <h3>Private Chef Services</h3>
-                        <p>Personalized dining experiences crafted to your preferences</p>
-                        <a href="#" class="service-link">Learn More</a>
+    <main id="main-content">
+        <section class="hero">
+            <video class="video-background" autoplay muted loop playsinline>
+                <source src="/assets/videos/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-subtitle">Shincheonji Bible Seminar</div>
+                <h1 class="hero-title">Testimony of the Fulfilled Realities of Revelation</h1>
+                <a href="#" class="hero-button">Learn More</a>
+            </div>
+        </section>
+    
+        <section class="services">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400/png" alt="Service 1">
+                        <div class="service-overlay">
+                            <h3>Private Chef Services</h3>
+                            <p>Personalized dining experiences crafted to your preferences</p>
+                            <a href="#" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400/png" alt="Service 2">
+                        <div class="service-overlay">
+                            <h3>Nutrition Consulting</h3>
+                            <p>Expert guidance for healthy and sustainable eating habits</p>
+                            <a href="#" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400/png" alt="Service 3">
+                        <div class="service-overlay">
+                            <h3>Recipe Development</h3>
+                            <p>Custom recipe creation for individual needs</p>
+                            <a href="#" class="service-link">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="/api/placeholder/600/400" alt="Service 2">
-                    <div class="service-overlay">
-                        <h3>Nutrition Consulting</h3>
-                        <p>Expert guidance for healthy and sustainable eating habits</p>
-                        <a href="#" class="service-link">Learn More</a>
+        </section>
+    
+        <section class="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-container">
+                <div class="about-image-wrapper">
+                    <img src="/assets/images/hero-image.jpg" alt="About Mikaela" class="about-image">
+                    <div class="about-overlay">
+                        <p class="about-text">
+                            At the intersection of food science and art, lies culinary nutrition.
+                            Finding notes of flavor and composing with healthy ingredients,
+                            this is where Mikaela makes healthy taste good.
+                        </p>
+                        <a href="#" class="about-button">LEARN MORE</a>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    
+        <section class="ebook-signup">
+            <div class="parallax-bg"></div>
+            <div class="signup-container">
+                <div class="signup-card">
+                    <div class="signup-content">
+                        <p class="signup-label">GET YOUR OWN</p>
+                        <h2 class="signup-title">FREE RECIPE EBOOK!</h2>
+                        <p class="signup-description">Subscribe here to receive new recipes, first access to new meal plans<br>and a complimentary recipe ebook.</p>
+                        <form class="signup-form">
+                            <label for="email" class="signup-label-small">Enter your email *</label>
+                            <input type="email" id="email" class="signup-input" placeholder="Your email">
+                            <button type="submit" class="signup-button">SEND</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="/api/placeholder/600/400" alt="Service 3">
-                    <div class="service-overlay">
-                        <h3>Recipe Development</h3>
-                        <p>Custom recipe creation for individual needs</p>
-                        <a href="#" class="service-link">Learn More</a>
-                    </div>
-                </div>
+        </section>
+    
+        <section class="videos">
+            <div class="section-header">
+                <h2 class="section-title">Videos</h2>
+                <a href="#" class="view-all-button">View All Videos</a>
             </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <h2 class="section-title">About</h2>
-        <div class="about-container">
-            <div class="about-image-wrapper">
-                <img src="/assets/images/hero-image.jpg" alt="About Mikaela" class="about-image">
-                <div class="about-overlay">
-                    <p class="about-text">
-                        At the intersection of food science and art, lies culinary nutrition.
-                        Finding notes of flavor and composing with healthy ingredients,
-                        this is where Mikaela makes healthy taste good.
-                    </p>
-                    <a href="#" class="about-button">LEARN MORE</a>
-                </div>
-            </div>
-            <!-- <div class="about-content">
-                <p class="about-text">
-                    At the intersection of food science and art, lies culinary nutrition.
-                    Finding notes of flavor and composing with healthy ingredients,
-                    this is where Mikaela makes healthy taste good.
-                </p>
-                <a href="#" class="about-link">LEARN MORE ></a>
-            </div> -->
-        </div>
-    </section>
-
-    <section class="ebook-signup">
-        <div class="parallax-bg"></div>
-        <div class="signup-container">
-            <div class="signup-card">
-                <div class="signup-content">
-                    <p class="signup-label">GET YOUR OWN</p>
-                    <h2 class="signup-title">FREE RECIPE EBOOK!</h2>
-                    <p class="signup-description">Subscribe here to receive new recipes, first access to new meal plans<br>and a complimentary recipe ebook.</p>
-                    <form class="signup-form">
-                        <label for="email" class="signup-label-small">Enter your email *</label>
-                        <input type="email" id="email" class="signup-input" placeholder="Your email">
-                        <button type="submit" class="signup-button">SEND</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="videos">
-        <div class="section-header">
-            <h2 class="section-title">Videos</h2>
-            <a href="#" class="view-all-button">View All Videos</a>
-        </div>
-        
-        <div class="video-container">
-            <div class="video-wrapper">
-                <div class="video-overlay">
-                    <button class="play-button" onclick="playVideo()">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <circle cx="12" cy="12" r="11" fill="rgba(0,0,0,0.4)"/>
-                            <path d="M10 8l6 4-6 4V8z" fill="white"/>
-                        </svg>
-                        <span>Play Video</span>
-                    </button>
-                </div>
-                <img src="/api/placeholder/1920/1080" alt="Video Thumbnail" class="video-thumbnail">
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">CONTACT ></a>
-            <a href="#" class="footer-link">ABOUT ></a>
-            <a href="#" class="footer-link">REVEALED WORD ></a>
-        </div>
-        
-        <div class="social-links">
-            <a href="https://youtube.com/yourchannel">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
             
-            <a href="https://instagram.com/yourprofile">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a href="https://facebook.com/yourpage">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-        </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div class="video-overlay">
+                        <button class="play-button" onclick="playVideo()">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
+                                <circle cx="12" cy="12" r="11" fill="rgba(0,0,0,0.4)"/>
+                                <path d="M10 8l6 4-6 4V8z" fill="white"/>
+                            </svg>
+                            <span>Play Video</span>
+                        </button>
+                    </div>
+                    <img src="https://placehold.co/1920x1080/png" alt="Video Thumbnail" class="video-thumbnail">
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <div class="newsletter">
-            <h3 class="newsletter-title">SIGN UP FOR OUR<br>NEWSLETTER</h3>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email here *" required class="newsletter-input">
-                <button type="submit" class="newsletter-button">SUBSCRIBE</button>
-            </form>
-        </div>
+    <div id="footer-placeholder"></div>
 
-        <div class="copyright">
-            © 2025 Shincheonji India.
-        </div>
-    </footer>
+    <script type="module">
+        import partials from '/scripts/partials.js';
+        
+        // Load header and footer
+        document.addEventListener('DOMContentLoaded', async () => {
+            await partials.insert('header-placeholder', '/partials/header.html');
+            await partials.insert('footer-placeholder', '/partials/footer.html');
+        });
 
-
-    <script>
-         // Parallax effect for ebook signup background
-         window.addEventListener('scroll', () => {
+        // Parallax effect for ebook signup background
+        window.addEventListener('scroll', () => {
             const parallaxBg = document.querySelector('.parallax-bg');
             if (parallaxBg) {
                 const scrolled = window.pageYOffset;
@@ -219,5 +175,7 @@
             videoWrapper.appendChild(iframe);
         }
     </script>
+    <script type="module" src="/scripts/router.js" defer></script>
+
 </body>
 </html>
